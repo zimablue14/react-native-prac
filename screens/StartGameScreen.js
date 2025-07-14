@@ -38,6 +38,7 @@ function StartGameScreen({ onPickNumber }) {
       <Title>Guess My Number</Title>
       <Card>
         <InstructionText>Enter a Number</InstructionText>
+        {/* 숫자 입력 인풋 */}
         <TextInput
           style={styles.numberInput}
           maxLength={2}
@@ -47,6 +48,7 @@ function StartGameScreen({ onPickNumber }) {
           onChangeText={numberInputHandler}
           value={enteredNumber}
         />
+        {/* 버튼들 */}
         <View style={styles.buttonsContainer}>
           <View style={styles.buttonContainer}>
             <PrimaryButton onPress={resetInputHandler}>Reset</PrimaryButton>
@@ -78,6 +80,7 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     fontWeight: "bold",
     textAlign: "center",
+    lineHeight: 1.25,
   },
   buttonsContainer: {
     flexDirection: "row",
