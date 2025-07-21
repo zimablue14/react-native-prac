@@ -6,7 +6,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
 
 import CategoriesScreen from "./screens/CategoriesScreen";
-import FaboritesScreen from "./screens/FavoritesScreen";
+import FavoritesScreen from "./screens/FavoritesScreen";
 import MealDetailScreen from "./screens/MealDetailScreen";
 import MealsOverviewScreen from "./screens/MealsOverviewScreen";
 import FavoritesContextProvider from "./store/context/favorites-context";
@@ -39,7 +39,7 @@ function DrawerNavigator() {
       />
       <Drawer.Screen
         name="Favorites"
-        component={FaboritesScreen}
+        component={FavoritesScreen}
         options={{
           drawerIcon: ({ color, size }) => (
             <Ionicons name="star" color={color} size={size} />
